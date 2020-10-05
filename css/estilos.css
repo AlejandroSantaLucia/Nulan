@@ -1,0 +1,149 @@
+
+/* 
+verde header:  #5fad6b
+
+
+*/
+
+:root {
+    --verde-principal: #5fad6b;
+    --verde-grisClaro: #D4FADA;
+    --verde-grisMuyClaro: #e7f5e9;
+    --verde-grisOscuro:#9FBBA3;
+    --verde-oscuro: #437A4C;
+    --verde-claro: #89FA9A;
+}
+
+
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62,5%;
+}
+a {
+    text-decoration: none;
+    }
+
+header {
+    background-color: var(--verde-principal)  ;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header figure {
+    height: 50px;
+    
+
+}
+
+header img {
+height: 100%;;
+}
+
+header ul { 
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+header a {
+    color: white;
+    font-size: 2rem;
+    margin: 0 10px;
+}
+
+
+
+main   {
+
+}
+
+
+.social{
+    display: flex;
+    flex-direction: column;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 30%;
+    height: 0;
+    z-index: 20;
+}
+
+.icon {
+    color: rgb(237, 234, 250);
+    font-size: 30px;
+    background: -webkit-linear-gradient(0deg, var(--verde-oscuro), var(--verde-principal));
+    padding: 5px ;
+    max-width: 50px;
+    margin: 5px 0;
+    /* transition-property: max-width  text-align; */
+    /* transition-duration: 2s;  */
+
+}
+
+.icon:hover {
+    max-width: 200px;
+    /* transition-property: max-width text-align; */
+    text-align: right;
+    font-size: 30px;
+    transition-duration: 2s; 
+}   
+
+
+
+.hero {
+    margin: 15px;
+    border-radius: 30px;
+    background-color: var(--verde-grisMuyClaro);
+    padding: 10px;
+    display: grid;
+    /* grid-row: 50% 50%, 50% 50%; */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "hero-logo hero-foto"
+                         ". hero-foto";
+}
+
+.hero-logo-container{
+    grid-area: hero-logo;
+}
+
+.hero-foto-container {
+    
+    grid-area: hero-foto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.hero-foto  {
+    width: 100%;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    
+}
+
+
+footer {
+    position: absolute;
+    background-color: var(--verde-principal) ;
+    /* display: flex;
+    justify-content:end ; */
+    font: 1rem;
+    width: 100%;
+    text-align: right;
+    color: white;
+    padding: 10px;
+}
