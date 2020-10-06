@@ -26,6 +26,7 @@ verde header:  #5fad6b
 
 html {
     font-size: 62,5%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 a {
     text-decoration: none;
@@ -65,8 +66,14 @@ header a {
 
 
 
-main   {
-
+.mainContainer   {
+    
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "hero"
+                         "quienSoy"
+                         "clases"
+                         "notas";
 }
 
 
@@ -104,36 +111,126 @@ main   {
 
 .hero {
     margin: 15px;
-    border-radius: 30px;
-    background-color: var(--verde-grisMuyClaro);
+    /* border-radius: 30px;
+    background-color: var(--verde-grisMuyClaro); */
     padding: 10px;
     display: grid;
+    grid-area: hero;
     /* grid-row: 50% 50%, 50% 50%; */
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "hero-logo hero-foto"
-                         ". hero-foto";
+    grid-template-columns: 10% 1fr 1fr 1fr 10%;
+    /* grid-template-rows: 1fr; */
+    grid-template-areas: " . quienSoy-foto clases-foto notas-foto ."
+                         ;
+    gap: 5px;
 }
 
-.hero-logo-container{
-    grid-area: hero-logo;
-}
 
-.hero-foto-container {
-    
-    grid-area: hero-foto;
+.hero-encuadre {
+    overflow: hidden;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 700px;
+    width: 100%;
+    
+}
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /* z-index: 12; */
+    text-align: center;
+    font-size: 4rem;
+    padding-top: 80%;
+    color: whitesmoke;
+    background-color: rgba(0, 0 , 0, 0.5);
+    display:none;
     
 }
 
-.hero-foto  {
-    width: 100%;
-    border-bottom-right-radius: 30px;
-    border-top-right-radius: 30px;
+.hero-quienSoy-container:hover .hero-overlay{
+    display: block;
+}
+.hero-clases-container:hover .hero-overlay{
+    display: block;
+}
+.hero-notas-container:hover .hero-overlay{
+    display: block;
+}
+
+
+.hero-overlay p {
     
 }
+
+.hero-quienSoy-container {
+    grid-area: quienSoy-foto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    overflow: hidden;
+}
+
+.hero-clases-container {
+    grid-area: clases-foto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    overflow: hidden;
+}
+.hero-notas-container {
+    grid-area: notas-foto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    overflow: hidden;
+}
+.hero a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    overflow: hidden;
+    /* position: relative; */
+}
+
+.quienSoyHero-foto  {
+    height: 100%;
+}
+
+.clasesHero-foto  {
+    height: 100%; 
+}
+
+.notasHero-foto  {
+    height: 100%;  
+}
+
+
+
+.quienSoy {
+    grid-area: quienSoy;
+    background-color: lightcyan;
+}
+
+.clases {
+    grid-area: clases;
+    background-color: lightskyblue;
+}
+
+.notas {
+    grid-area: notas;
+    background-color: lightpink;
+}
+
+
+
 
 
 footer {
