@@ -33,17 +33,18 @@ a {
     }
 
 header {
-    background-color: var(--verde-principal)  ;
+   background: linear-gradient(to right,#D4FADA,  #5fad6b, #5fad6b, #5fad6b,#D4FADA);
     width: 100%;
     height: 50px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    /* box-shadow: 0px 0px 15px black; */
 
 }
 
 header figure {
-    height: 50px;
+    height: 100%;
     
 
 }
@@ -110,9 +111,13 @@ header a {
 
 
 .hero {
-    margin: 15px;
+    /* margin: 15px; */
     /* border-radius: 30px;
     background-color: var(--verde-grisMuyClaro); */
+    /* background-image: url("../imagenes/Back-Hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
     padding: 10px;
     display: grid;
     grid-area: hero;
@@ -216,13 +221,143 @@ header a {
 
 .quienSoy {
     grid-area: quienSoy;
-    background-color: lightcyan;
+    /* background-color: lightcyan; */
+    padding: 50px;
+    /* color: var(--verde-principal); */
+    color: #AD5F72;
 }
+
+.titulo-presentacion {
+    display: flex;
+    padding-left: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.sub-titulosPresentacion {
+    display: flex;
+    align-items: center;
+}
+.sub-titulosPresentacion h3 {
+    padding-right: 10px;
+}
+
+.container-presentacion {
+    max-width: 150px;
+    max-height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.imagen-presentación {
+    width: 100%;
+}
+
+.quienSoy p {
+    padding-left: 20px;
+
+}
+
+.institutos {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.institutos-container {
+    height: 100px;
+
+    overflow: hidden;
+    display: flex;
+    
+
+}
+
+.imagen-instituto {
+    height: 100%;
+    /* width: 100%; */
+}
+
+
 
 .clases {
     grid-area: clases;
-    background-color: lightskyblue;
+    /* background-color: lightskyblue; */
+    display: flex;
+    justify-content: center;
 }
+
+.clases-container {
+    /* background-color: var(--verde-grisMuyClaro); */
+    width: 94%;
+    /* border-radius: 30px; */
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr 10%;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-areas: "ClasesBox ClasesBox ClasesBox ClasesBox"
+                          " . cuadroClases1 cuadroClases2 . "   
+                          " . cuadroClases3 cuadroClases4 . "   
+    ;
+    gap: 10px;
+
+}
+
+.ClasesBox {
+    grid-area: ClasesBox;
+    text-align: center;
+    color: var(--verde-oscuro);
+    padding: 5px   15px ;
+    background-color: var(--verde-grisMuyClaro);
+    /* border-radius: 30px; */
+    height: 240%;
+
+}
+.ClasesBox h2 {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    /* color: #AD5F72; */
+
+    
+}
+
+
+.cuadroClases {
+    background-color: whitesmoke;
+    border: var(--verde-grisOscuro) 1px solid;
+    border-radius: 20px;
+    padding: 10px 0;
+    overflow: hidden;
+}
+ 
+
+.claseTitulo {
+        /* background-color: var(--verde-grisClaro); */
+        background-color: #AD5F72;
+        text-align: center;
+        width: 100%;
+        color: white;
+
+}
+
+.claseDetail {
+    padding:  10px;
+}
+
+.cuadroClases1 {
+    grid-area:cuadroClases1 ;
+}
+.cuadroClases2 {
+    grid-area:cuadroClases2 ;
+}
+.cuadroClases3 {
+    grid-area:cuadroClases3 ;
+}
+.cuadroClases4 {
+    grid-area:cuadroClases4 ;
+}
+
 
 .notas {
     grid-area: notas;
