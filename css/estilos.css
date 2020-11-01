@@ -12,6 +12,8 @@ verde header:  #5fad6b
     --verde-grisOscuro:#9FBBA3;
     --verde-oscuro: #437A4C;
     --verde-claro: #89FA9A;
+    --complementario: #AD5F72;
+
 }
 
 
@@ -254,7 +256,7 @@ header a {
 
 .quienSoy p {
     padding-left: 20px;
-
+    line-height: 20px;
 }
 
 .institutos {
@@ -295,7 +297,7 @@ header a {
     padding: 20px;
     display: grid;
     grid-template-columns: 10% 1fr 1fr 10%;
-    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-rows: 25% 1fr 1fr ;
     grid-template-areas: "ClasesBox ClasesBox ClasesBox ClasesBox"
                           " . cuadroClases1 cuadroClases2 . "   
                           " . cuadroClases3 cuadroClases4 . "   
@@ -311,15 +313,17 @@ header a {
     padding: 5px   15px ;
     background-color: var(--verde-grisMuyClaro);
     /* border-radius: 30px; */
-    height: 240%;
+    height: 300%;
 
 }
 .ClasesBox h2 {
     margin-bottom: 15px;
     text-transform: uppercase;
     /* color: #AD5F72; */
+}
 
-    
+.clase-description {
+    line-height: 20px;
 }
 
 
@@ -331,10 +335,15 @@ header a {
     overflow: hidden;
 }
  
+.cuadroClases h4{
+    color: var(--complementario);
+
+
+}
 
 .claseTitulo {
         /* background-color: var(--verde-grisClaro); */
-        background-color: #AD5F72;
+        background-color: var(--complementario);
         text-align: center;
         width: 100%;
         color: white;
@@ -347,15 +356,33 @@ header a {
 
 .cuadroClases1 {
     grid-area:cuadroClases1 ;
+    
+}
+.cuadroClases1 ul {
+    padding: 20px;
+    line-height: 25px;
 }
 .cuadroClases2 {
     grid-area:cuadroClases2 ;
 }
+.cuadroClases2 ul {
+    padding: 20px;
+    line-height: 25px;
+}
+
 .cuadroClases3 {
     grid-area:cuadroClases3 ;
 }
+
+.cuadroClases3 p{
+    line-height: 20px;
+}
 .cuadroClases4 {
     grid-area:cuadroClases4 ;
+}
+
+.cuadroClases4 p{
+    line-height: 20px;
 }
 
 

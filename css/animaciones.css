@@ -1,0 +1,14 @@
+
+
+.hero {
+    -webkit-animation-duration: 6s;
+    -webkit-animation-name: fadein;
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
