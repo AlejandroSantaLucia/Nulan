@@ -223,9 +223,7 @@ header a {
 
 .quienSoy {
     grid-area: quienSoy;
-    /* background-color: lightcyan; */
     padding: 50px;
-    /* color: var(--verde-principal); */
     color: #AD5F72;
 }
 
@@ -291,99 +289,68 @@ header a {
 }
 
 .clases-container {
-    /* background-color: var(--verde-grisMuyClaro); */
+    background-color: var(--verde-grisClaro);
     width: 94%;
-    /* border-radius: 30px; */
+    
     padding: 20px;
-    display: grid;
-    grid-template-columns: 10% 1fr 1fr 10%;
-    grid-template-rows: 25% 1fr 1fr ;
-    grid-template-areas: "ClasesBox ClasesBox ClasesBox ClasesBox"
-                          " . cuadroClases1 cuadroClases2 . "   
-                          " . cuadroClases3 cuadroClases4 . "   
-    ;
-    gap: 10px;
-
 }
 
-.ClasesBox {
-    grid-area: ClasesBox;
+.ClasesBox{
     text-align: center;
-    color: var(--verde-oscuro);
-    padding: 5px   15px ;
-    background-color: var(--verde-grisMuyClaro);
-    /* border-radius: 30px; */
-    height: 300%;
-
 }
 .ClasesBox h2 {
     margin-bottom: 15px;
-    text-transform: uppercase;
-    /* color: #AD5F72; */
 }
 
-.clase-description {
-    line-height: 20px;
+.cuadroClases{
+    /* border: 1px solid red; */
+    height: 200px;
+    display: flex;
+    margin-top: 70px;
 }
 
-
-.cuadroClases {
-    background-color: whitesmoke;
-    border: var(--verde-grisOscuro) 1px solid;
-    border-radius: 20px;
-    padding: 10px 0;
-    overflow: hidden;
-}
- 
-.cuadroClases h4{
-    color: var(--complementario);
+.cuadroClases1{
+    background-image: url("../imagenes/pruebaCuadro1.png");
+    background-position: right;
+    background-size: cover;
 
 
 }
+.cuadroClases2{
+    justify-content: flex-end;
+    background-image: url("../imagenes/PruebaCuadro2.png");
+    background-position: left;
+    background-size: cover;
+}
+.cuadroClases3{
+    background-image: url("../imagenes/pruebaCuadro3.png");
+    background-position: right;
+    background-size: cover;
 
-.claseTitulo {
-        /* background-color: var(--verde-grisClaro); */
-        background-color: var(--complementario);
-        text-align: center;
-        width: 100%;
-        color: white;
-
 }
-
-.claseDetail {
-    padding:  10px;
-}
-
-.cuadroClases1 {
-    grid-area:cuadroClases1 ;
-    
-}
-.cuadroClases1 ul {
-    padding: 20px;
-    line-height: 25px;
-}
-.cuadroClases2 {
-    grid-area:cuadroClases2 ;
-}
-.cuadroClases2 ul {
-    padding: 20px;
-    line-height: 25px;
+.cuadroClases4{
+    justify-content: flex-end;
+    background-image: url("../imagenes/PruebaCuadro4.png");
+    background-position: left;
+    background-size: cover; 
 }
 
-.cuadroClases3 {
-    grid-area:cuadroClases3 ;
+.claseDetail{
+    padding: 15px 10px 10px;
+    max-width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.cuadroClases3 p{
-    line-height: 20px;
+.claseDetail ul li{
+    line-height: 30px;
 }
-.cuadroClases4 {
-    grid-area:cuadroClases4 ;
+.claseDetail ul{
+    padding-left: 15px;
 }
 
-.cuadroClases4 p{
-    line-height: 20px;
-}
+
 
 
 .notas {
