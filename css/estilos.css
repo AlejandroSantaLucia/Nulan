@@ -72,7 +72,8 @@ header a {
 .mainContainer   {
     
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 800px 700px 1400px 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr; */
     grid-template-areas: "hero"
                          "quienSoy"
                          "clases"
@@ -289,9 +290,9 @@ header a {
 }
 
 .clases-container {
-    background-color: var(--verde-grisClaro);
+    /* background-color: var(--verde-grisClaro); */
     width: 94%;
-    
+    background-image: url("../imagenes/backgroundClases.png");
     padding: 20px;
 }
 
@@ -300,6 +301,13 @@ header a {
 }
 .ClasesBox h2 {
     margin-bottom: 15px;
+}
+.modalidadOnline{
+    margin-top: 50px;
+}
+
+.clase-description{
+    line-height: 25px;
 }
 
 .cuadroClases{
@@ -310,29 +318,33 @@ header a {
 }
 
 .cuadroClases1{
-    background-image: url("../imagenes/pruebaCuadro1.png");
+    background-image: url("../imagenes/PruebaCuadro1B.png");
     background-position: right;
-    background-size: cover;
+    background-size: contain;
+    background-repeat:no-repeat
 
 
 }
 .cuadroClases2{
     justify-content: flex-end;
-    background-image: url("../imagenes/PruebaCuadro2.png");
+    background-image: url("../imagenes/PruebaCuadro2b.png");
     background-position: left;
-    background-size: cover;
+    background-size: contain;
+    background-repeat:no-repeat
 }
 .cuadroClases3{
-    background-image: url("../imagenes/pruebaCuadro3.png");
+    background-image: url("../imagenes/pruebaCuadro3b.png");
     background-position: right;
-    background-size: cover;
+    background-size: contain;
+    background-repeat:no-repeat
 
 }
 .cuadroClases4{
     justify-content: flex-end;
-    background-image: url("../imagenes/PruebaCuadro4.png");
+    background-image: url("../imagenes/PruebaCuadro4b.png");
     background-position: left;
-    background-size: cover; 
+    background-size: contain;
+    background-repeat:no-repeat  
 }
 
 .claseDetail{
@@ -341,6 +353,7 @@ header a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 }
 
 .claseDetail ul li{
@@ -348,6 +361,11 @@ header a {
 }
 .claseDetail ul{
     padding-left: 15px;
+  
+}
+
+.claseDetail p{
+
 }
 
 
@@ -356,7 +374,25 @@ header a {
 .notas {
     grid-area: notas;
     background-color: lightpink;
+    margin: 35px;
 }
+
+
+
+
+.notaImgcontainer{
+    width: 300px;
+}
+
+.notaBox img{
+    width: 100%;
+}
+
+
+
+
+
+
 
 
 
