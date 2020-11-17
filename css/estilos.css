@@ -94,7 +94,8 @@ header a {
 .icon {
     color: rgb(237, 234, 250);
     font-size: 30px;
-    background: -webkit-linear-gradient(0deg, var(--verde-oscuro), var(--verde-principal));
+    /* background: -webkit-linear-gradient(0deg, var(--verde-oscuro), var(--verde-principal)); */
+    background: rgba(0, 0, 0, 0.3);
     padding: 5px ;
     max-width: 50px;
     margin: 5px 0;
@@ -109,6 +110,9 @@ header a {
     text-align: right;
     font-size: 30px;
     transition-duration: 2s; 
+    /* background: rgba(0, 0, 0, 0.3); */
+    background: -webkit-linear-gradient(0deg, var(--verde-oscuro), var(--verde-principal));
+
 }   
 
 
@@ -303,7 +307,7 @@ header a {
     margin-bottom: 15px;
 }
 .modalidadOnline{
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 .clase-description{
@@ -373,27 +377,52 @@ header a {
 
 .notas {
     grid-area: notas;
-    background-color: lightpink;
+
     margin: 35px;
+    height:500px; 
+    overflow: scroll
 }
 
+.nota{
+margin-bottom: 30px;
+border-radius: 15px;
+border: solid 1px var(--verde-claro);
+overflow: hidden;
+background: var(--verde-grisMuyClaro);
 
+}
+
+.notaBox{
+    display: flex;
+}
 
 
 .notaImgcontainer{
-    width: 300px;
+    width: 350px;
+    overflow: hidden;
+    object-fit: contain;
+    /* border: red solid 1px */
+    
+
 }
+
 
 .notaBox img{
     width: 100%;
+    height: 100%;
+ 
+
+}
+
+.notaDetail{
+    padding: 10px;
 }
 
 
 
 
 
-
-
+    
 
 
 
