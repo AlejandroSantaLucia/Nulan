@@ -118,19 +118,11 @@ header a {
 
 
 .hero {
-    /* margin: 15px; */
-    /* border-radius: 30px;
-    background-color: var(--verde-grisMuyClaro); */
-    /* background-image: url("../imagenes/Back-Hero.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; */
+
     padding: 10px;
     display: grid;
     grid-area: hero;
-    /* grid-row: 50% 50%, 50% 50%; */
     grid-template-columns: 10% 1fr 1fr 1fr 10%;
-    /* grid-template-rows: 1fr; */
     grid-template-areas: " . quienSoy-foto clases-foto notas-foto ."
                          ;
     gap: 5px;
@@ -145,6 +137,7 @@ header a {
     justify-content: center;
     height: 700px;
     width: 100%;
+    object-fit: contain;
     
 }
 .hero-overlay {
@@ -174,35 +167,19 @@ header a {
 }
 
 
-.hero-overlay p {
-    
-}
 
 .hero-quienSoy-container {
     grid-area: quienSoy-foto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 700px;
-    overflow: hidden;
-}
+    }
 
 .hero-clases-container {
     grid-area: clases-foto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 700px;
-    overflow: hidden;
 }
+
 .hero-notas-container {
     grid-area: notas-foto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 700px;
-    overflow: hidden;
 }
+
 .hero a {
     display: flex;
     align-items: center;
@@ -273,31 +250,29 @@ header a {
 .institutos-container {
     height: 100px;
 
-    overflow: hidden;
-    display: flex;
+    /* overflow: hidden;
+    display: flex; */
     
 
 }
 
 .imagen-instituto {
     height: 100%;
-    /* width: 100%; */
 }
 
 
 
 .clases {
     grid-area: clases;
-    /* background-color: lightskyblue; */
     display: flex;
     justify-content: center;
 }
 
 .clases-container {
-    /* background-color: var(--verde-grisClaro); */
     width: 94%;
     background-image: url("../imagenes/backgroundClases.png");
     padding: 20px;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.2)
 }
 
 .ClasesBox{
@@ -322,7 +297,7 @@ header a {
 }
 
 .cuadroClases1{
-    background-image: url("../imagenes/PruebaCuadro1B.png");
+    background-image: url("../imagenes/Cuadro1-desktop.png");
     background-position: right;
     background-size: contain;
     background-repeat:no-repeat
@@ -331,13 +306,13 @@ header a {
 }
 .cuadroClases2{
     justify-content: flex-end;
-    background-image: url("../imagenes/PruebaCuadro2b.png");
+    background-image: url("../imagenes/cuadro2-deskop.png");
     background-position: left;
     background-size: contain;
     background-repeat:no-repeat
 }
 .cuadroClases3{
-    background-image: url("../imagenes/pruebaCuadro3b.png");
+    background-image: url("../imagenes/Cuadro3-desktop.png");
     background-position: right;
     background-size: contain;
     background-repeat:no-repeat
@@ -345,7 +320,7 @@ header a {
 }
 .cuadroClases4{
     justify-content: flex-end;
-    background-image: url("../imagenes/PruebaCuadro4b.png");
+    background-image: url("../imagenes/cuadro4-desktop.png");
     background-position: left;
     background-size: contain;
     background-repeat:no-repeat  

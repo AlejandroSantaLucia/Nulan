@@ -1,0 +1,232 @@
+@media screen and (max-width: 1024px) {
+
+.mainContainer   {
+    grid-template-rows: 700px 700px 1fr 1fr;
+}
+
+
+
+/* ------------------- hero */
+
+.hero-encuadre{
+    height: 600px;
+}
+
+
+
+/* --------------------- Quien Soy  */
+
+.institutos-container {
+    height: 90px;}
+
+}
+
+
+
+/* ---------------- clases */
+
+.claseDetail{
+    background: var(--verde-principal);
+    color: white;
+    margin: 10% 10% -10% 10%;
+    border-radius: 5px;
+
+}
+
+.cuadroClases{
+    margin-bottom: 140px;
+}
+
+.cuadroClases1{
+    background-image: url("../imagenes/Cuadro1-1024.png");
+
+}
+
+.cuadroClases2{
+    background-image: url("../imagenes/Cuadro2-1024.png");
+
+}
+
+.cuadroClases3{
+    background-image: url("../imagenes/Cuadro3-1024.png");
+
+}
+.cuadroClases4{
+    background-image: url("../imagenes/Cuadro4-1024.png");
+
+}
+
+
+@media screen and (max-width: 768px){
+
+
+    .mainContainer   {
+        grid-template-rows: 600px 700px 1800px 1fr;
+    }
+
+    /* ------------------- hero */
+
+
+.hero-overlay{
+    font-size: 3rem;
+}
+
+.hero-encuadre{
+    height: 500px;
+}
+
+
+/* --------------------- Quien Soy  */
+
+.institutos-container {
+    height: 70px;}
+
+
+.titulo-presentacion {
+    font-size: .8rem;
+}
+
+.sub-titulosPresentacion {
+    font-size: .8rem;
+}
+
+.quienSoy p {
+    font-size: .8rem;
+}
+
+
+
+/* ---------------- clases */
+
+.claseDetail {
+    max-width: 66%;
+}
+
+
+.ClasesBox h2 {
+    font-size: 1.2rem
+}
+
+.clase-description{
+    font-size: .8rem;
+}
+
+.cuadroClases li, p{
+    font-size: .8rem;
+}
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 480px){
+
+    .mainContainer   {
+        grid-template-rows: 700px 700px 2000px 1fr;
+    }
+
+.social{
+    top: 60%;
+}
+
+
+
+    /* ------------------- hero */
+    
+
+.hero {
+    grid-template-columns: 1fr;
+    grid-template-rows: 3% 1fr 1fr 1fr 3%;
+    grid-template-areas: " . "
+                        "quienSoy-foto" 
+                        "clases-foto" 
+                        "notas-foto" 
+                        " .";
+
+}
+
+
+.hero-overlay{
+    padding-top: 10%;
+}
+
+.hero-encuadre{
+    height: 200px;
+}
+
+
+.institutos-container {
+    height: 50px;}
+
+
+/* --------------------- Quien Soy  */
+
+.titulo-presentacion{
+    display: block;
+    text-align: center;
+}
+
+.sub-titulosPresentacion {
+display: block;
+text-align: center;
+margin: 10px auto;
+}
+
+
+
+.sub-titulosPresentacion figure{
+    margin: 0 auto;
+}
+
+
+/* ----------------------------clases */
+
+
+.cuadroClases{
+background-position: top;
+
+
+}
+
+
+.claseDetail{
+    margin: 10% 0 -10% ;
+
+}
+
+.claseDetail1{
+    height: 220px;
+}
+.claseDetail2{
+    height: 280px;
+}
+.claseDetail3{
+    height: 250px;
+}
+.claseDetail4{
+    height: 250px;
+}
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 320px){
+
+.quienSoy{
+    padding: 10px;
+}
+
+    .institutos-container {
+        height: 20px;}
+
+}
+
