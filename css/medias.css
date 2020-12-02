@@ -1,7 +1,7 @@
 @media screen and (max-width: 1024px) {
 
 .mainContainer   {
-    grid-template-rows: 700px 700px 1fr 1fr;
+    grid-template-rows: 700px 700px 1fr 750px;
 }
 
 
@@ -17,7 +17,7 @@
 /* --------------------- Quien Soy  */
 
 .institutos-container {
-    height: 90px;}
+    height: 90px;
 
 }
 
@@ -26,15 +26,20 @@
 /* ---------------- clases */
 
 .claseDetail{
-    background: var(--verde-principal);
+    background-color: rgba(95, 173, 107, 0.7); /*verde--principal*/
+    max-height: 250px;
     color: white;
     margin: 10% 10% -10% 10%;
     border-radius: 5px;
+}
 
+.modalidadOnline{
+    margin-top: 250px;
 }
 
 .cuadroClases{
-    margin-bottom: 140px;
+    margin-bottom: 170px;
+    margin-top: 170px;
 }
 
 .cuadroClases1{
@@ -54,6 +59,14 @@
 .cuadroClases4{
     background-image: url("../imagenes/Cuadro4-1024.png");
 
+} 
+
+
+
+
+
+
+
 }
 
 
@@ -61,7 +74,7 @@
 
 
     .mainContainer   {
-        grid-template-rows: 600px 700px 1800px 1fr;
+        grid-template-rows: 600px 700px 2200px 750px;
     }
 
     /* ------------------- hero */
@@ -99,7 +112,8 @@
 /* ---------------- clases */
 
 .claseDetail {
-    max-width: 66%;
+    /* max-width: 66%; */
+    max-height: 250px;
 }
 
 
@@ -115,6 +129,18 @@
     font-size: .8rem;
 }
 
+
+
+/* -------------------- NOTAS */
+
+.notas h2{
+    font-size: 1.2rem;
+}
+
+.notaBox li{
+    font-size: .8rem;
+}
+
 }
 
 
@@ -125,7 +151,7 @@
 @media screen and (max-width: 480px){
 
     .mainContainer   {
-        grid-template-rows: 700px 700px 2000px 1fr;
+        grid-template-rows: 700px 900px 2000px 750px;
     }
 
 .social{
@@ -187,6 +213,9 @@ margin: 10px auto;
 
 .cuadroClases{
 background-position: top;
+max-height: 100px;
+margin-top: 100px;
+margin-bottom: 250px;
 
 
 }
@@ -194,6 +223,7 @@ background-position: top;
 
 .claseDetail{
     margin: 10% 0 -10% ;
+    max-width: 66%;
 
 }
 
@@ -209,6 +239,23 @@ background-position: top;
 .claseDetail4{
     height: 250px;
 }
+
+/* -------------------- NOTAS */
+
+.notas {
+    margin: 15px;
+}
+.notasContainer{
+    margin: 15px
+}
+
+.nota img {
+    width: 45%;
+}
+
+
+
+
 }
 
 
@@ -221,12 +268,65 @@ background-position: top;
 
 @media screen and (max-width: 320px){
 
+.mainContainer   {
+    grid-template-rows: 700px 1000px 2200px 750px;
+}
+
 .quienSoy{
     padding: 10px;
 }
 
     .institutos-container {
-        height: 20px;}
+        height: 35px;}
+
+
+
+
+
+/* -----------------------------------------  clases */
+
+
+.claseDetail{
+    margin: 10% auto 10% auto;
+    max-width: 80%;
+    max-height: 320px;
+    height: 300px;
+    }
+
+.cuadroClases{
+    /* margin-bottom: 140px; */
+}
+
+.cuadroClases1{
+    background-image: url("../imagenes/Cuadro1-320.png");
 
 }
 
+.cuadroClases2{
+    background-image: url("../imagenes/Cuadro2-320.png");
+
+}
+
+.cuadroClases3{
+    background-image: url("../imagenes/Cuadro3-320.png");
+
+}
+.cuadroClases4{
+    background-image: url("../imagenes/Cuadro4-320.png");
+
+}
+
+/* -------------------- NOTAS */
+
+.notaDetail{
+    display: block
+}
+
+.nota img {
+    width: 100%;
+}
+
+
+
+
+}
