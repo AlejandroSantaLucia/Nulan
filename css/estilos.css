@@ -69,7 +69,7 @@ header a {
 
 
 
-.mainContainer   {
+/* .mainContainer   {
     
     display: grid;
     grid-template-rows: 800px 700px 1400px 750px;
@@ -78,7 +78,7 @@ header a {
                          "quienSoy"
                          "clases"
                          "notas";
-}
+} */
 
 
 .social{
@@ -118,7 +118,7 @@ header a {
     padding: 10px;
     display: grid;
     grid-area: hero;
-    grid-template-columns: 10% 1fr 1fr 1fr 10%;
+    grid-template-columns: 5% 1fr 1fr 1fr 5%;
     grid-template-areas: " . quienSoy-foto clases-foto notas-foto ."
                          ;
     gap: 5px;
@@ -244,16 +244,13 @@ header a {
 }
 
 .institutos-container {
-    height: 100px;
-
-    /* overflow: hidden;
-    display: flex; */
+width: 100%;
     
 
 }
 
 .imagen-instituto {
-    height: 100%;
+    width: 100%;
 }
 
 

@@ -1,8 +1,8 @@
 @media screen and (max-width: 1024px) {
 
-.mainContainer   {
+/* .mainContainer   {
     grid-template-rows: 700px 700px 1fr 750px;
-}
+} */
 
 
 
@@ -73,9 +73,9 @@
 @media screen and (max-width: 768px){
 
 
-    .mainContainer   {
+    /* .mainContainer   {
         grid-template-rows: 600px 700px 2200px 750px;
-    }
+    } */
 
     /* ------------------- hero */
 
@@ -150,9 +150,9 @@
 
 @media screen and (max-width: 480px){
 
-    .mainContainer   {
+    /* .mainContainer   {
         grid-template-rows: 700px 900px 2000px 750px;
-    }
+    } */
 
 .social{
     top: 60%;
@@ -170,7 +170,7 @@
                         "quienSoy-foto" 
                         "clases-foto" 
                         "notas-foto" 
-                        " .";
+                        " . ";
 
 }
 
@@ -268,9 +268,9 @@ margin-bottom: 250px;
 
 @media screen and (max-width: 320px){
 
-.mainContainer   {
+/* .mainContainer   {
     grid-template-rows: 700px 1000px 2200px 750px;
-}
+} */
 
 .quienSoy{
     padding: 10px;
