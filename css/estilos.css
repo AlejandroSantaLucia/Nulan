@@ -348,6 +348,7 @@ width: 100%;
     border: solid 1px var(--verde-grisOscuro);
     margin: 35px;
     background-color: var(--verde-grisOscuro);
+    border-radius: 10px;
 
 }
 
@@ -364,15 +365,17 @@ width: 100%;
     padding: 20px 0;
     margin-top:40px;
     margin-left: 35px;
+    color: white;
 }
 
 .nota{
 margin-bottom: 30px;
-border-radius: 15px;
+/* border-radius: 15px; */
 border: solid 1px var(--verde-claro);
 overflow: hidden;
 background: var(--verde-grisMuyClaro);
 line-height: 25px;
+box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.2);
 
 
 }
