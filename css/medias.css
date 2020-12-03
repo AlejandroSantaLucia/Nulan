@@ -80,7 +80,7 @@
     /* ------------------- hero */
 
 
-.hero-overlay{
+.hero-overlayText{
     font-size: 3rem;
 }
 
@@ -125,10 +125,12 @@
     font-size: .8rem;
 }
 
-.cuadroClases li, p{
+.cuadroClases li{
     font-size: .8rem;
 }
-
+.cuadroClases p{
+    font-size: .8rem;
+}
 
 
 /* -------------------- NOTAS */
@@ -177,6 +179,9 @@
 
 .hero-overlay{
     padding-top: 10%;
+}
+.hero-overlay p{
+    font-size: 2.5rem;
 }
 
 .hero-encuadre{
@@ -271,6 +276,10 @@ margin-bottom: 250px;
 /* .mainContainer   {
     grid-template-rows: 700px 1000px 2200px 750px;
 } */
+
+.hero-overlay p{
+    font-size: 2rem;
+}
 
 .quienSoy{
     padding: 10px;
