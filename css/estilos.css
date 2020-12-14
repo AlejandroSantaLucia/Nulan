@@ -255,17 +255,17 @@ td {
     /* position: relative; */
 }
 
-.quienSoyHero-foto  {
+.quienSoyHero-foto,  .clasesHero-foto , .notasHero-foto {
     height: 100%;
 }
 
-.clasesHero-foto  {
+/* .clasesHero-foto  {
     height: 100%; 
 }
 
 .notasHero-foto  {
     height: 100%;  
-}
+} */
 
 
 
