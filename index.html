@@ -25,11 +25,50 @@
                         <a href="https://www.instagram.com/nulanyoga/" target="_blank" class="icon-instagram icon"></a>
                         <a href="https://api.whatsapp.com/send?phone=5491164789167&text=Hola,%20me%20interesa%20saber%20un%20poco%20mas%20sobre%20las%20clases%20de%20yoga." target="_blank"class="icon-whatsapp icon"></a>
                     </div>
-        <div class="overlayModal active"  id="overlayModal">
-            <div class="modal" id="modal"></div>
-            <h1>prueba de overlay</h1>
-            <h1>aca tendrian que ir los horarios</h1>
-            <button class="btn primary" id="hide-modal">Gracias</button>
+        <div class="overlayModal "  id="overlayModal">
+            <div class="modal" id="modal">
+                <table border="0">
+                    <caption>Horarios Clases Online</caption>
+                    <tbody>
+                      <tr>
+                        
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miercoles</th>
+                        <th>Jueves</th>
+                      </tr>
+                      <tr>
+                        <td class="horario"> 
+                            <h4>09:00 hs</h4> 
+                            <h5> (adultos)</h5>
+                        </td>
+                        <td class="sinHorario"></td>
+                        <td class="sinHorario"></td>
+                        <td class="horario"> 
+                            <h4>09:00 hs</h4> 
+                            <h5> (adultos)</h5>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="sinHorario"></td>
+                        <td class="horario"> 
+                            <h4 >18:00 hs</h4> 
+                            <h5> (adultos)</h5>
+                        </td>
+                        <td class="horario"> 
+                            <h4>17:00 hs</h4> 
+                            <h5> (niñxs)</h5>
+                        </td>
+                        <td class="horario"> 
+                            <h4>18:00 hs</h4> 
+                            <h5> (adultos)</h5>
+                        </td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                <button class="btn primary" id="hide-modal">Gracias</button>
+            </div>
 
         </div>
 
@@ -123,6 +162,7 @@
                     </div>         
                     <div class="ClasesBox">               
                         <h2 class="modalidadOnline">Modalidad Online</h2>             
+                        <button class="btn" id="schedule"> Ver horarios</button>
                     </div>     
                     <div class="cuadroClases cuadroClases2">
                         <div class="claseDetail claseDetail2">    
@@ -299,5 +339,7 @@
         <p>Designed by Alejandro Santa Lucia</p>
     </footer>
     
+
+    <script src="javascript/scripts.js"></script>
 </body>
 </html>
